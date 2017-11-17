@@ -37,12 +37,10 @@ class MaxPairwiseProduct
 	end
 end
 
-N = 1000000
-array = []
-N.times {|n| array.push(Random.new.rand(10))}
 
-Benchmark.bm do |x|
-	x.report("MaxPairwiseProduct:") do 
-		MaxPairwiseProduct.new(array).max_pair_wise_product
-	end
-end
+
+# Benchmark.bm do |x|
+# 	x.report("MaxPairwiseProduct:") do 
+# 		MaxPairwiseProduct.new(array).max_pair_wise_product
+# 	end
+# end
